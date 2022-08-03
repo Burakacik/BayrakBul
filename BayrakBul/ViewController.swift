@@ -15,12 +15,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        
-        
+        //Fetch database
         fetchDatabase()
+        
+        //For hiding keyboard
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(gestureRecognizer)
         
     }
     
+    //Hide keyboard selector
+    @objc func hideKeyboard() {
+        view.endEditing(true)
+    }
+    
+    //Fetching database function
     func fetchDatabase() {
         let bundle = Bundle.main.path(forResource: "FlagsDataBase", ofType: ".db")
         let target = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
@@ -39,7 +48,22 @@ class ViewController: UIViewController {
         }
     }
     
+    //Start button (player name cannot be empty)
     @IBAction func startButtonClicked(_ sender: Any) {
+        if playerNameTextField.text != "" {
+            performSegue(withIdentifier: "toQuizVC", sender: nil)
+        }else{
+            let alert = UIAlertController(title: "Oyuncu adı", message: "Oyuncu adı boş olamaz!", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "Tamam", style: .default, handler: nil)
+            alert.addAction(okButton)
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    //Sending player name to ResultVC for high score
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let toViewController = segue.destination as! QuizVC
+        toViewController.playerNameQVC = playerNameTextField.text!
     }
     
 }

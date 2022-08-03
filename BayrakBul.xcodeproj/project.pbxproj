@@ -22,6 +22,8 @@
 		AD77311B289AB70A00D6BF10 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AD773116289AB70A00D6BF10 /* FMDatabaseQueue.m */; };
 		AD77311E289AB73D00D6BF10 /* FlagsDataBase.db in Resources */ = {isa = PBXBuildFile; fileRef = AD77311D289AB73D00D6BF10 /* FlagsDataBase.db */; };
 		AD773121289AB75600D6BF10 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AD773120289AB74E00D6BF10 /* libsqlite3.tbd */; };
+		AD773123289ABBD900D6BF10 /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD773122289ABBD900D6BF10 /* Flags.swift */; };
+		AD773125289ABCEF00D6BF10 /* FlagsDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD773124289ABCEF00D6BF10 /* FlagsDao.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		AD773116289AB70A00D6BF10 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
 		AD77311D289AB73D00D6BF10 /* FlagsDataBase.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = FlagsDataBase.db; sourceTree = "<group>"; };
 		AD773120289AB74E00D6BF10 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		AD773122289ABBD900D6BF10 /* Flags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
+		AD773124289ABCEF00D6BF10 /* FlagsDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsDao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,13 +88,15 @@
 			isa = PBXGroup;
 			children = (
 				AD77311D289AB73D00D6BF10 /* FlagsDataBase.db */,
-				AD77311C289AB70E00D6BF10 /* FMDB */,
+				AD773126289AC66000D6BF10 /* FMDB */,
 				AD4DFCB72899999C0038FE51 /* AppDelegate.swift */,
 				AD4DFCB92899999C0038FE51 /* SceneDelegate.swift */,
 				AD4DFCBB2899999C0038FE51 /* ViewController.swift */,
 				AD4DFCCB289A85260038FE51 /* QuizVC.swift */,
 				AD4DFCCD289A854A0038FE51 /* ResultVC.swift */,
 				AD4DFCBD2899999C0038FE51 /* Main.storyboard */,
+				AD773122289ABBD900D6BF10 /* Flags.swift */,
+				AD773124289ABCEF00D6BF10 /* FlagsDao.swift */,
 				AD4DFCC02899999E0038FE51 /* Assets.xcassets */,
 				AD4DFCC22899999E0038FE51 /* LaunchScreen.storyboard */,
 				AD4DFCC52899999E0038FE51 /* Info.plist */,
@@ -99,7 +105,15 @@
 			path = BayrakBul;
 			sourceTree = "<group>";
 		};
-		AD77311C289AB70E00D6BF10 /* FMDB */ = {
+		AD77311F289AB74E00D6BF10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD773120289AB74E00D6BF10 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD773126289AC66000D6BF10 /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
 				AD773114289AB70A00D6BF10 /* FMDatabase.h */,
@@ -115,14 +129,6 @@
 				AD77310F289AB70A00D6BF10 /* FMResultSet.m */,
 			);
 			path = FMDB;
-			sourceTree = "<group>";
-		};
-		AD77311F289AB74E00D6BF10 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AD773120289AB74E00D6BF10 /* libsqlite3.tbd */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +208,9 @@
 				AD4DFCBC2899999C0038FE51 /* ViewController.swift in Sources */,
 				AD773118289AB70A00D6BF10 /* FMResultSet.m in Sources */,
 				AD4DFCCC289A85260038FE51 /* QuizVC.swift in Sources */,
+				AD773123289ABBD900D6BF10 /* Flags.swift in Sources */,
 				AD773117289AB70A00D6BF10 /* FMDatabase.m in Sources */,
+				AD773125289ABCEF00D6BF10 /* FlagsDao.swift in Sources */,
 				AD77311B289AB70A00D6BF10 /* FMDatabaseQueue.m in Sources */,
 				AD77311A289AB70A00D6BF10 /* FMDatabaseAdditions.m in Sources */,
 				AD773119289AB70A00D6BF10 /* FMDatabasePool.m in Sources */,

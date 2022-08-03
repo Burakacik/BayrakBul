@@ -15,6 +15,9 @@ class ResultVC: UIViewController {
     @IBOutlet weak var totalScoreLabel: UILabel!
     @IBOutlet weak var highScoreLabel: UILabel!
     
+    //Variables
+    var playerName = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

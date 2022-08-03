@@ -19,10 +19,19 @@ class QuizVC: UIViewController {
     @IBOutlet weak var buttonC: UIButton!
     @IBOutlet weak var buttonD: UIButton!
     
+    //Variables
+    var playerNameQVC = ""
+    var questions = [Flags]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        questions = FlagsDao().random9Questions()
+        
+        for x in questions {
+            print(x.flag_name!)
+        }
     }
     
 
