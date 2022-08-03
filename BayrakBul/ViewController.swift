@@ -17,8 +17,26 @@ class ViewController: UIViewController {
         
         
         
+        fetchDatabase()
         
+    }
+    
+    func fetchDatabase() {
+        let bundle = Bundle.main.path(forResource: "FlagsDataBase", ofType: ".db")
+        let target = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+        let fileManager = FileManager.default
+        let copyTarget = URL(fileURLWithPath: target).appendingPathComponent("FlagsDataBase.db")
         
+        if fileManager.fileExists(atPath: copyTarget.path) {
+            print("Veritabanı zaten var. Kopyalamaya gerek yok.")
+        }else{
+            do {
+                try fileManager.copyItem(atPath: bundle!, toPath: copyTarget.path)
+                print("Veritabanı kopyalandı.")
+            } catch {
+                print(error)
+            }
+        }
     }
     
     @IBAction func startButtonClicked(_ sender: Any) {

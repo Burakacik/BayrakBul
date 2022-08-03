@@ -15,6 +15,13 @@
 		AD4DFCC42899999E0038FE51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4DFCC22899999E0038FE51 /* LaunchScreen.storyboard */; };
 		AD4DFCCC289A85260038FE51 /* QuizVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DFCCB289A85260038FE51 /* QuizVC.swift */; };
 		AD4DFCCE289A854A0038FE51 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DFCCD289A854A0038FE51 /* ResultVC.swift */; };
+		AD773117289AB70A00D6BF10 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77310D289AB70A00D6BF10 /* FMDatabase.m */; };
+		AD773118289AB70A00D6BF10 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AD77310F289AB70A00D6BF10 /* FMResultSet.m */; };
+		AD773119289AB70A00D6BF10 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD773110289AB70A00D6BF10 /* FMDatabasePool.m */; };
+		AD77311A289AB70A00D6BF10 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD773115289AB70A00D6BF10 /* FMDatabaseAdditions.m */; };
+		AD77311B289AB70A00D6BF10 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AD773116289AB70A00D6BF10 /* FMDatabaseQueue.m */; };
+		AD77311E289AB73D00D6BF10 /* FlagsDataBase.db in Resources */ = {isa = PBXBuildFile; fileRef = AD77311D289AB73D00D6BF10 /* FlagsDataBase.db */; };
+		AD773121289AB75600D6BF10 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AD773120289AB74E00D6BF10 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,20 @@
 		AD4DFCC52899999E0038FE51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD4DFCCB289A85260038FE51 /* QuizVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVC.swift; sourceTree = "<group>"; };
 		AD4DFCCD289A854A0038FE51 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
+		AD77310B289AB70900D6BF10 /* BayrakBul-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BayrakBul-Bridging-Header.h"; sourceTree = "<group>"; };
+		AD77310C289AB70A00D6BF10 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		AD77310D289AB70A00D6BF10 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		AD77310E289AB70A00D6BF10 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		AD77310F289AB70A00D6BF10 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		AD773110289AB70A00D6BF10 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		AD773111289AB70A00D6BF10 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		AD773112289AB70A00D6BF10 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		AD773113289AB70A00D6BF10 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		AD773114289AB70A00D6BF10 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		AD773115289AB70A00D6BF10 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		AD773116289AB70A00D6BF10 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		AD77311D289AB73D00D6BF10 /* FlagsDataBase.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = FlagsDataBase.db; sourceTree = "<group>"; };
+		AD773120289AB74E00D6BF10 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD773121289AB75600D6BF10 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +68,7 @@
 			children = (
 				AD4DFCB62899999C0038FE51 /* BayrakBul */,
 				AD4DFCB52899999C0038FE51 /* Products */,
+				AD77311F289AB74E00D6BF10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +83,8 @@
 		AD4DFCB62899999C0038FE51 /* BayrakBul */ = {
 			isa = PBXGroup;
 			children = (
+				AD77311D289AB73D00D6BF10 /* FlagsDataBase.db */,
+				AD77311C289AB70E00D6BF10 /* FMDB */,
 				AD4DFCB72899999C0038FE51 /* AppDelegate.swift */,
 				AD4DFCB92899999C0038FE51 /* SceneDelegate.swift */,
 				AD4DFCBB2899999C0038FE51 /* ViewController.swift */,
@@ -69,8 +94,35 @@
 				AD4DFCC02899999E0038FE51 /* Assets.xcassets */,
 				AD4DFCC22899999E0038FE51 /* LaunchScreen.storyboard */,
 				AD4DFCC52899999E0038FE51 /* Info.plist */,
+				AD77310B289AB70900D6BF10 /* BayrakBul-Bridging-Header.h */,
 			);
 			path = BayrakBul;
+			sourceTree = "<group>";
+		};
+		AD77311C289AB70E00D6BF10 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				AD773114289AB70A00D6BF10 /* FMDatabase.h */,
+				AD77310D289AB70A00D6BF10 /* FMDatabase.m */,
+				AD77310C289AB70A00D6BF10 /* FMDatabaseAdditions.h */,
+				AD773115289AB70A00D6BF10 /* FMDatabaseAdditions.m */,
+				AD773113289AB70A00D6BF10 /* FMDatabasePool.h */,
+				AD773110289AB70A00D6BF10 /* FMDatabasePool.m */,
+				AD773112289AB70A00D6BF10 /* FMDatabaseQueue.h */,
+				AD773116289AB70A00D6BF10 /* FMDatabaseQueue.m */,
+				AD77310E289AB70A00D6BF10 /* FMDB.h */,
+				AD773111289AB70A00D6BF10 /* FMResultSet.h */,
+				AD77310F289AB70A00D6BF10 /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		AD77311F289AB74E00D6BF10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD773120289AB74E00D6BF10 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +157,7 @@
 				TargetAttributes = {
 					AD4DFCB32899999C0038FE51 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -133,6 +186,7 @@
 			files = (
 				AD4DFCC42899999E0038FE51 /* LaunchScreen.storyboard in Resources */,
 				AD4DFCC12899999E0038FE51 /* Assets.xcassets in Resources */,
+				AD77311E289AB73D00D6BF10 /* FlagsDataBase.db in Resources */,
 				AD4DFCBF2899999C0038FE51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,7 +200,12 @@
 			files = (
 				AD4DFCCE289A854A0038FE51 /* ResultVC.swift in Sources */,
 				AD4DFCBC2899999C0038FE51 /* ViewController.swift in Sources */,
+				AD773118289AB70A00D6BF10 /* FMResultSet.m in Sources */,
 				AD4DFCCC289A85260038FE51 /* QuizVC.swift in Sources */,
+				AD773117289AB70A00D6BF10 /* FMDatabase.m in Sources */,
+				AD77311B289AB70A00D6BF10 /* FMDatabaseQueue.m in Sources */,
+				AD77311A289AB70A00D6BF10 /* FMDatabaseAdditions.m in Sources */,
+				AD773119289AB70A00D6BF10 /* FMDatabasePool.m in Sources */,
 				AD4DFCB82899999C0038FE51 /* AppDelegate.swift in Sources */,
 				AD4DFCBA2899999C0038FE51 /* SceneDelegate.swift in Sources */,
 			);
@@ -293,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FN4UH9Z6XK;
@@ -312,6 +372,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.burakacik.BayrakBul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BayrakBul/BayrakBul-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -322,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FN4UH9Z6XK;
@@ -341,6 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.burakacik.BayrakBul;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BayrakBul/BayrakBul-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
