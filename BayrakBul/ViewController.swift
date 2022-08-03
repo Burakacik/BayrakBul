@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         
         
     }
-
-    @IBAction func startQuizClicked(_ sender: Any) {
+    
+    @IBAction func startButtonClicked(_ sender: Any) {
     }
     
 }

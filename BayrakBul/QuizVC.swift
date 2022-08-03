@@ -8,7 +8,17 @@
 import UIKit
 
 class QuizVC: UIViewController {
-
+    
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var correctQtyLabel: UILabel!
+    @IBOutlet weak var wrongQtyLabel: UILabel!
+    @IBOutlet weak var questionNumberLabel: UILabel!
+    @IBOutlet weak var flagImage: UIImageView!
+    @IBOutlet weak var buttonA: UIButton!
+    @IBOutlet weak var buttonB: UIButton!
+    @IBOutlet weak var buttonC: UIButton!
+    @IBOutlet weak var buttonD: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,5 +35,13 @@ class QuizVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func buttonAClicked(_ sender: Any) {
+    }
+    @IBAction func buttonBClicked(_ sender: Any) {
+    }
+    @IBAction func buttonCClicked(_ sender: Any) {
+    }
+    @IBAction func buttonDClicked(_ sender: Any) {
+    }
+    
 }

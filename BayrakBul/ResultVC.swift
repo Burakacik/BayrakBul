@@ -9,6 +9,13 @@ import UIKit
 
 class ResultVC: UIViewController {
 
+    @IBOutlet weak var correctQtyLabel: UILabel!
+    @IBOutlet weak var wrongQtyLabel: UILabel!
+    @IBOutlet weak var timerScoreLabel: UILabel!
+    @IBOutlet weak var totalScoreLabel: UILabel!
+    @IBOutlet weak var highScoreLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,5 +32,8 @@ class ResultVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    @IBAction func tryAgainClicked(_ sender: Any) {
+    }
+    
 }
