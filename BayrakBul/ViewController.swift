@@ -60,7 +60,7 @@ class ViewController: UIViewController {
         }
     }
     
-    //Sending player name to ResultVC for high score
+    //Sending player name to QuizVC for high score
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let toViewController = segue.destination as! QuizVC
         toViewController.playerNameQVC = playerNameTextField.text!

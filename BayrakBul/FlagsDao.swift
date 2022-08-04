@@ -42,7 +42,7 @@ class FlagsDao {
         
         db?.open()
         do {
-            let rs = try db!.executeQuery("SELECT * FROM Flags WHERE flag_id != ? ORDER BY RANDOM() LIMIT 3", values: nil)
+            let rs = try db!.executeQuery("SELECT * FROM Flags WHERE flag_id != ? ORDER BY RANDOM() LIMIT 3", values: [flag_id])
             while(rs.next()) {
                 let flag = Flags (flag_id: Int(rs.string(forColumnIndex: 0))!, flag_name: String(rs.string(forColumnIndex: 1)), flag_image: String(rs.string(forColumnIndex: 2)))
                 list.append(flag)

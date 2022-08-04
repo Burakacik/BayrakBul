@@ -21,3 +21,17 @@ class Flags {
         self.flag_image = flag_image
     }
 }
+
+extension Flags: Equatable, Hashable {
+    
+    static func == (lhs: Flags, rhs: Flags) -> Bool {
+        return lhs.flag_id == rhs.flag_id
+    }
+    
+    var hashValue: Int {
+        get {
+            return flag_id!.hashValue
+        }
+    }
+    
+}
